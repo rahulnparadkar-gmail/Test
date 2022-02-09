@@ -4,6 +4,7 @@
     using Microsoft.Extensions.Logging;
     using Refactoring.LegacyService;
     using System;
+    using Refactoring.JuniorApi.model;
 
     [ApiController]
     [Route("api/[controller]")]
@@ -69,12 +70,5 @@
         }
     }
 
-    public class CandidateRequest
-    {
-        public DateTime DateOfBirth { get; set; }
-        public string EmailAddress { get; set; }
-        public string Firstname { get; set; }
-        public string Surname { get; set; }
-        public int PositionId { get; set; }
-    }
+
 }
